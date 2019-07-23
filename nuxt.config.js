@@ -12,7 +12,15 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel:"stylesheet", href: 'http://static.wxkydd.com/libs/bootstrap/3.3.4/bootstrap.min.css' },
+      { rel:"stylesheet",  href: 'http://static.wxkydd.com/libs/datatable/1.10.11/datatables-rs-bt.min.css' },
+      { rel:"stylesheet",  href: 'http://static.wxkydd.com/libs/datatable/buttons/1.4.2/buttons.dataTables.min.css' }
+    ],
+    script: [
+      { src: "http://static.wxkydd.com/libs/jquery/3.2.1/jquery.min.js" },
+      // { src:"http://static.wxkydd.com/libs/bootstrap/3.3.4/bootstrap.min.js"},
+      { src:"http://static.wxkydd.com/libs/datatable/1.10.11/datatables-rs-bt.min.js"}
     ]
   },
   /*
@@ -23,7 +31,9 @@ export default {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/css/components/media.css',
+    '~/assets/css/components/public.css'
   ],
   /*
   ** Plugins to load before mounting the App

@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <div v-if="isLogin" class="menu-container">
-      <n-menu />
+      <Menu />
     </div>
     <nuxt />
   </div>
 </template>
 
 <script>
-  import NMenu from '~/components/menu.vue'
+  import Menu from '~/components/menu.vue'
   export default {
     components: {
-      NMenu
+      Menu
     },
     data () {
       return {
